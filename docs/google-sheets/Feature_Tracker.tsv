@@ -1,0 +1,14 @@
+Feature	Frontend	Backend	Database	API	Testing	Deployment	Overall Status	Completion %
+Public Home/Landing	Done	In Progress	NA	In Progress	Not Started	Not Started	In Progress	70
+Articles	Public and admin pages exist; translation controls in progress	CRUD, schedule, publish, archive exist	Schema ready	Mostly integrated	Manual Pending	Not Started	In Progress	82
+Magazines	Public/admin/reader pages exist; flipbook improved; PDF summary and translation in progress	CRUD and schedule exist; PDF extraction available	Schema ready	Partially integrated	Manual Pending	Not Started	In Progress	76
+Blogs	Public/admin pages exist; translation controls in progress	CRUD and schedule exist	Schema ready	Partially integrated	Manual Pending	Not Started	In Progress	68
+News	Public/admin pages exist; translation controls in progress	CRUD and schedule exist	Schema ready	Partially integrated	Manual Pending	Not Started	In Progress	66
+Categories	Public/admin pages exist	Create/list/delete exist	Schema ready	Integrated	Not Started	Not Started	In Progress	70
+Subscribers	Public form/admin list exist	Subscribe/list exist	Schema ready	Integrated	Not Started	Not Started	In Progress	65
+Authentication	Login page exists	Register/login/JWT exist	User model ready	Integrated	Not Started	Not Started	In Progress	58
+Search	Public page exists	Query handling incomplete	Indexes pending	Partial	Not Started	Not Started	Pending	35
+AI Summary	Detail page calls exist and magazine PDF summary added	Summarize endpoint exists with PDF extraction	Fields added	Partial	Manual Pending	Not Started	In Progress	60
+Ratings	Admin ratings dashboard and magazine rating UI work exist	Rating and rating analytics routes added	Rating schema changes added	Integrated	Manual Pending	Not Started	In Progress	70
+Translation	Detail-page translate/reset controls in progress	Translate route added using external translation API	No schema change	Partial	Manual Pending	Not Started	In Progress	55
+Deployment	Not configured	Not configured	Not configured	NA	Not Started	Not Started	Pending	8

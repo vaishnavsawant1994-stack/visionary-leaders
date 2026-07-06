@@ -1,0 +1,37 @@
+﻿API Name	Endpoint	Method	Integrated	Testing Status	Completion %
+Health Check	/	GET	Yes	Manual Pending	80
+Register	/api/auth/register	POST	Partial	Manual Pending	60
+Login	/api/auth/login	POST	Yes	Manual Pending	70
+List Articles	/api/articles	GET	Yes	Manual Pending	80
+Create Article	/api/articles	POST	Yes	Manual Pending	80
+Get Article	/api/articles/:id	GET	Yes	Manual Pending	85
+Update Article	/api/articles/:id	PUT	Yes	Manual Pending	78
+Delete Article	/api/articles/:id	DELETE	Yes	Manual Pending	75
+Scheduled Articles	/api/articles/scheduled/list	GET	Partial	Manual Pending	70
+Preview Article	/api/articles/preview/:id	GET	Yes	Manual Pending	75
+Publish Article	/api/articles/publish/:id	PUT	Yes	Manual Pending	75
+Archive Article	/api/articles/archive/:id	PUT	Yes	Manual Pending	75
+List Magazines	/api/magazines	GET	Yes	Manual Pending	75
+Create Magazine	/api/magazines	POST	Yes	Manual Pending	70
+Get Magazine	/api/magazines/:id	GET	Yes	Manual Pending	78
+Update Magazine	/api/magazines/:id	PUT	Yes	Manual Pending	65
+Delete Magazine	/api/magazines/:id	DELETE	Yes	Manual Pending	65
+Preview Magazine	/api/magazines/preview/:id	GET	Yes	Manual Pending	65
+List Blogs	/api/blogs	GET	Yes	Manual Pending	70
+Create Blog	/api/blogs	POST	Yes	Manual Pending	65
+Get Blog	/api/blogs/:id	GET	Yes	Manual Pending	70
+Update Blog	/api/blogs/:id	PUT	Yes	Manual Pending	60
+Delete Blog	/api/blogs/:id	DELETE	Yes	Manual Pending	60
+Preview Blog	/api/blogs/preview/:id	GET	Yes	Manual Pending	65
+List News	/api/news	GET	Yes	Manual Pending	68
+Create News	/api/news	POST	Yes	Manual Pending	62
+Get News	/api/news/:id	GET	Yes	Manual Pending	68
+Update News	/api/news/:id	PUT	Yes	Manual Pending	60
+Delete News	/api/news/:id	DELETE	Yes	Manual Pending	60
+Preview News	/api/news/preview/:id	GET	Yes	Manual Pending	62
+List Categories	/api/categories	GET	Yes	Manual Pending	75
+Create Category	/api/categories	POST	Yes	Manual Pending	72
+Delete Category	/api/categories/:id	DELETE	Yes	Manual Pending	70
+Subscribe	/api/subscribers	POST	Yes	Manual Pending	75
+List Subscribers	/api/subscribers	GET	Yes	Manual Pending	65
+AI Summarize	/api/ai/summarize	POST	Yes	Manual Pending	45

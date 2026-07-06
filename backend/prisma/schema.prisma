@@ -1,0 +1,126 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  role      UserRole @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  articles  Article[]
+}
+
+model Category {
+  id          Int        @id @default(autoincrement())
+  name        String
+  slug        String     @unique
+  description String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  articles    Article[]
+  magazines   Magazine[]
+}
+
+model Article {
+  id                    Int       @id @default(autoincrement())
+  title                 String
+  slug                  String    @unique
+  summary               String?
+  aiSummary             String?
+  content               String
+  seoTitle              String?
+  seoDescription        String?
+  tags                  Json?
+  featured              Boolean   @default(false)
+  featuredImage         String?
+  status                String    @default("DRAFT")
+  publishDate           DateTime?
+  scheduledPublishDate  DateTime?
+  categoryId            Int
+  authorId              Int
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+  author                User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  category              Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+}
+
+model Magazine {
+  id                    Int               @id @default(autoincrement())
+  title                 String
+  slug                  String            @unique
+  edition               String?
+  description           String?
+  aiSummary             String?
+  coverImage            String?
+  pdfUrl                String?
+  featured              Boolean           @default(false)
+  status                String            @default("DRAFT")
+  publishDate           DateTime?
+  scheduledPublishDate  DateTime?
+  displayDate           DateTime?
+  categoryId            Int?
+  createdAt             DateTime          @default(now())
+  updatedAt             DateTime          @updatedAt
+  category              Category?         @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  ratings               MagazineRating[]
+}
+
+model MagazineRating {
+  id          Int      @id @default(autoincrement())
+  magazineId  Int
+  rating      Int
+  createdAt   DateTime @default(now())
+  magazine    Magazine @relation(fields: [magazineId], references: [id], onDelete: Cascade)
+}
+
+model Blog {
+  id                    Int       @id @default(autoincrement())
+  title                 String
+  excerpt               String
+  aiSummary             String?
+  content               String
+  image                 String?
+  author                String?
+  category              String?
+  status                String    @default("DRAFT")
+  publishDate           DateTime?
+  scheduledPublishDate  DateTime?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+}
+
+model News {
+  id                    Int       @id @default(autoincrement())
+  title                 String
+  aiSummary             String?
+  content               String
+  image                 String?
+  author                String?
+  category              String?
+  source                String?
+  status                String    @default("DRAFT")
+  publishDate           DateTime?
+  scheduledPublishDate  DateTime?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+}
+
+model Subscriber {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+enum UserRole {
+  ADMIN
+  EDITOR
+  WRITER
+}

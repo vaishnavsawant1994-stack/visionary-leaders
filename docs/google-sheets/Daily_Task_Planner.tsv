@@ -1,0 +1,8 @@
+﻿Task ID	Today's Tasks	Tomorrow Tasks	Day After Tomorrow Tasks	Estimated Hours	Priority	Dependencies	Status
+MP-001	Finalize baseline feature breakdown	Review and approve baseline	Use baseline for sprint tracking	3	High	Repo access	Done
+MP-002	Start API URL centralization	Complete API client migration	Regression test public/admin pages	5	High	NEXT_PUBLIC_API_URL	In Progress
+MP-003	Smoke test article CRUD/schedule/archive	Fix article lifecycle defects	Add regression checklist	4	High	Local DB seed	In Progress
+MP-004	Define magazine lifecycle endpoint parity	Implement magazine publish/archive UI/API	Test magazine scheduled/archived states	6	High	Article pattern	Pending
+MP-005	Prepare blog lifecycle parity plan	Implement blog publish/archive UI/API	Test blog scheduled/archived states	5	High	Article pattern	Pending
+MP-006	Prepare news lifecycle parity plan	Implement news publish/archive UI/API	Test news scheduled/archived states	5	High	Article pattern	Pending
+MP-007	Identify search/filter parameters	Implement Prisma filters	Add search UX QA cases	8	High	Controller updates	Pending

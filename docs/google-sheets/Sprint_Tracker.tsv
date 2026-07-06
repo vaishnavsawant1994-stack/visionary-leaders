@@ -1,0 +1,5 @@
+﻿Sprint	Features	Completed	In Progress	Pending	Bugs	Testing Status	Release Readiness	Health Status
+Sprint 1 - Stabilization	Baseline, API config, content lifecycle parity, search/filter discovery	1	2	5	0	Not Started	35%	Yellow
+Sprint 2 - Discovery/AI	Search filters, category browsing, AI summary persistence, content detail polish	0	0	6	0	Not Started	25%	Yellow
+Sprint 3 - Security/Admin	Auth hardening, RBAC, admin dashboard metrics, subscriber export	0	0	7	0	Not Started	20%	Yellow
+Sprint 4 - QA/Deployment	Test automation, CI/CD, staging deployment, release checklist	0	0	8	0	Not Started	15%	Red

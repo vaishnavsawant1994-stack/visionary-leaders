@@ -1,0 +1,5 @@
+﻿Environment	Frontend Version	Backend Version	Database Version	Status
+Local	0.1.0	1.0.0	Prisma migrations through 20260618	In Progress
+Development	Not Deployed	Not Deployed	Not Provisioned	Pending
+Staging	Not Deployed	Not Deployed	Not Provisioned	Pending
+Production	Not Deployed	Not Deployed	Not Provisioned	Pending

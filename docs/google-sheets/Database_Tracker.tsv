@@ -1,0 +1,9 @@
+﻿Table	Relationships	Indexes	Migration	Seed Data	Completion %
+User	User has many Article; role enum	Email unique	Created	Admin seed script exists	75
+Category	Category has many Article	Slug unique	Created	Seed unclear	70
+Article	Belongs to User and Category	Slug unique	Created	Seed unclear	80
+Magazine	categoryId present but no Prisma relation	Slug unique	Created	Seed unclear	62
+Blog	Standalone content table	None visible	Created	Seed unclear	65
+News	Standalone content table	None visible	Created	Seed unclear	65
+Subscriber	Standalone subscriber table	Email unique	Created	Seed unclear	70
+UserRole enum	Used by User	NA	Created	NA	80

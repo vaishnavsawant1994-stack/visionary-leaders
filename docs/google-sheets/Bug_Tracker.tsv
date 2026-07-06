@@ -1,0 +1,7 @@
+﻿Bug ID	Module	Severity	Assigned To	ETA	Status
+BUG-001	Frontend API Configuration	High	Developer	2026-06-24	Open
+BUG-002	Search/Filters	High	Developer	2026-06-30	Open
+BUG-003	Status Lifecycle Parity	High	Developer	2026-06-27	Open
+BUG-004	AI Summary Persistence	Medium	Developer	2026-07-01	Open
+BUG-005	Backend Error Handling Consistency	Medium	Developer	2026-07-03	Open
+BUG-006	Production Encoding/Console Text	Low	Developer	2026-07-05	Open

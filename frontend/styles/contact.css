@@ -1,0 +1,222 @@
+/* =========================
+   GLOBAL CONTACT PAGE
+========================= */
+
+* {
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-page {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.contact-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+}
+
+/* HERO OVERLAY */
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.12),
+      transparent 60%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.65)
+    );
+  z-index: 1;
+}
+
+/* HERO CONTENT */
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+/* BADGE */
+.contact-hero-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 18px;
+
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+
+  backdrop-filter: blur(10px);
+}
+
+/* TITLE */
+.contact-hero-title {
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+/* SUBTITLE */
+.contact-hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 720px;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* HIGHLIGHT TEXT */
+.contact-highlight {
+  background: linear-gradient(
+    90deg,
+    #60a5fa,
+    #a78bfa
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.contact-card {
+  background: var(--card);
+  color: var(--text);
+
+  padding: 40px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.contact-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+
+  background: transparent;
+  color: var(--text);
+}
+
+.contact-input::placeholder {
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+.contact-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* =========================
+   SEND MESSAGE BUTTON (FINAL FIX)
+========================= */
+
+.contact-card form button.contact-btn {
+  background-color: var(--primary) !important;
+  background-image: none !important;
+  color: #ffffff !important;
+
+  border: none !important;
+  outline: none !important;
+
+  padding: 14px 24px;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  width: auto !important;
+  min-width: 180px;
+  max-width: fit-content;
+
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.contact-card form button.contact-btn:hover {
+  background-color: var(--secondary) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.contact-card form button.contact-btn:active {
+  transform: scale(0.98);
+}
+
+.contact-card form button.contact-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .contact-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+}

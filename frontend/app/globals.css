@@ -1,0 +1,401 @@
+/* =====================================
+   ROOT VARIABLES (LIGHT DEFAULT)
+===================================== */
+
+:root {
+  --bg: #faf7f2;
+  --text: #111111;
+  --muted: #6b7280;
+
+  --card: #ffffff;
+  --border: #ececec;
+
+  --accent: #ff5c5c;
+  --secondary: #f4c95d;
+
+  --hero-bg: linear-gradient(
+    135deg,
+    #fffaf5,
+    #fff3f0,
+    #fff7f5
+  );
+
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 10px 35px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.14);
+}
+
+/* =====================================
+   RESET
+===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================
+   BASE
+===================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  transition: background 0.35s ease,
+    color 0.35s ease;
+}
+
+/* =====================================
+   TYPOGRAPHY
+===================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+/* =====================================
+   LINKS
+===================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* =====================================
+   IMAGES
+===================================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+/* PRIMARY BUTTON */
+
+.primary-btn {
+  background: var(--accent);
+  color: white;
+  padding: 14px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+/* SECONDARY BUTTON */
+
+.secondary-btn {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--text);
+  padding: 14px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero-section {
+  padding: 110px 40px;
+  background: var(--hero-bg);
+}
+
+.hero-title {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 900;
+  max-width: 700px;
+}
+
+.hero-title span {
+  color: var(--accent);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 18px;
+  max-width: 650px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* =====================================
+   CARDS
+===================================== */
+
+.card,
+.magazine-card,
+.article-card,
+.category-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: 0.35s ease;
+}
+
+.card:hover,
+.magazine-card:hover,
+.article-card:hover,
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card img,
+.magazine-card img,
+.article-card img {
+  transition: transform 0.35s ease;
+}
+
+.card:hover img,
+.magazine-card:hover img,
+.article-card:hover img {
+  transform: scale(1.06);
+}
+
+/* =====================================
+   SIDEBAR TRENDING CARDS
+===================================== */
+
+.sidebar-card {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
+
+.sidebar-card img {
+  width: 85px;
+  height: 85px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* =====================================
+   TABLES
+===================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+}
+
+th,
+td {
+  padding: 14px;
+  border: 1px solid var(--border);
+}
+
+th {
+  background: #f9fafb;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+  background: #111111;
+  color: white;
+  padding: 60px 20px;
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 20px;
+}
+
+/* =====================================
+   GRADIENT TEXT
+===================================== */
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    var(--accent),
+    var(--secondary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* =====================================
+   DARK MODE (CINEMATIC)
+===================================== */
+
+body.dark {
+  --bg: #050816;
+  --text: #ffffff;
+  --muted: #9ca3af;
+
+  --card: #111827;
+  --border: rgba(255, 255, 255, 0.08);
+
+  --accent: #ff4d6d;
+  --secondary: #ff8fa3;
+
+  --hero-bg: radial-gradient(
+    circle at left,
+    #1d0f24,
+    #050816
+  );
+}
+
+body.dark nav {
+  background: rgba(5, 8, 22, 0.9);
+}
+
+body.dark footer {
+  background: #020617;
+}
+
+/* =====================================
+   CORPORATE MODE (GOLD BUSINESS)
+===================================== */
+
+body.corporate {
+  --bg: #f7f5ef;
+  --text: #1f2937;
+  --muted: #6b7280;
+
+  --card: #ffffff;
+  --border: #ddd6c8;
+
+  --accent: #a77b27;
+  --secondary: #d4af37;
+
+  --hero-bg: linear-gradient(
+    135deg,
+    #faf8f2,
+    #f5efe2
+  );
+}
+
+body.corporate nav {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+body.corporate footer {
+  background: #1f2937;
+}
+
+/* =====================================
+   SMOOTH TRANSITIONS
+===================================== */
+
+body,
+a,
+button,
+input,
+textarea,
+select,
+.card,
+nav {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease;
+}

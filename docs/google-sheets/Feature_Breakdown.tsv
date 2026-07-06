@@ -1,0 +1,11 @@
+﻿Area	Pages / Modules	Current Coverage	Key Gaps
+Public Website	Home, About, Contact, Articles, Article Detail, Magazines, Magazine Detail, Flipbook Reader, Blogs, Blog Detail, News Detail, Categories, Search, Newsletter	Core pages and API reads exist	Search/filter backend support appears incomplete; hardcoded API URLs; needs loading/error polish
+Admin CMS	Dashboard, Login, Articles CRUD, Magazines CRUD, Blogs CRUD, News CRUD, Categories, Subscribers, Scheduled Preview pages	Main CRUD screens exist	Role-based authorization, unified status actions, validation consistency, QA coverage
+Content Workflow	Draft, Published, Scheduled, Preview, Archive for articles	Scheduler covers articles/magazines/blogs/news	Publish/archive endpoints missing for magazines/blogs/news; status normalization inconsistent
+Media Management	Article cover upload, magazine cover/PDF upload, static upload serving	Multer middleware exists	Blog/news image upload not standardized; Cloudinary dependency unused or not fully integrated
+AI Summary	/api/ai/summarize, Gemini utility, frontend detail-page summary calls	AI summarization exists	Persistence of aiSummary fields not wired consistently; auth/rate limits/prompt controls needed
+Subscribers	Public subscribe, admin subscriber list	Basic flow exists	Export, unsubscribe, validation hardening, email verification
+Auth	Register, login, JWT middleware	Basic admin auth exists	RBAC enforcement, refresh/session handling, password reset, production security hardening
+Database	User, Category, Article, Magazine, Blog, News, Subscriber	Prisma schema and migrations exist	Missing relations for Magazine category; enum/status consistency; indexes for search/filter
+DevOps	Separate frontend/backend packages	Local scripts exist	CI/CD, environment templates, deployment docs, production logging, monitoring
+QA	Manual-ready flows	No visible automated test suite	Unit, integration, API, UI smoke, UAT scripts needed

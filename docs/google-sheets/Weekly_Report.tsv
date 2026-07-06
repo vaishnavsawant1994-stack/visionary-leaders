@@ -1,0 +1,11 @@
+﻿Metric	Week 1	Week 2
+Summary	Stabilize content lifecycle, API config, and baseline tracking	Implement discovery/search and AI persistence
+Completed Features	Baseline project tracking initialized	Planned
+Pending Features	API config, lifecycle parity, search support	AI persistence, category filter polish
+Delays	Testing not started	None yet
+Dependencies	Local DB, env vars, test data	Completed Week 1 lifecycle work
+Risks	Hardcoded API URLs, missing automated tests	AI cost/security and search correctness
+Testing Status	Not Started	Planned
+Overall Completion %	58	65 target
+Expected Completion Date	2026-09-18	2026-09-18
+Health Status	Yellow	Yellow

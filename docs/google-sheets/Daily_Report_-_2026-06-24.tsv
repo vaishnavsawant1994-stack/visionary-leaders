@@ -1,0 +1,11 @@
+Metric	Value
+Completed Tasks	Magazine PDF summary feature; AI summary route; Gemini summary utility; PDF extractor; flipbook reader improvements; project-management workbook and TSV trackers
+Tasks In Progress	AI summary persistence; reader polish; API config cleanup
+Pending Tasks	Lifecycle parity for magazines/blogs/news; search/filter backend support; RBAC; testing; deployment setup
+Blockers	GEMINI_API_KEY/runtime verification needed; local DB/test data not fully verified; automated tests missing
+Bug Fixes	Improved magazine reader flow and PDF summary handling
+Hours Worked	Not logged
+Today's Progress %	8%
+Overall Project %	61%
+Tomorrow's Deliverables	Rating system, analytics page, translation route, multilingual detail-page controls, PDF extraction robustness
+Health Status	Yellow

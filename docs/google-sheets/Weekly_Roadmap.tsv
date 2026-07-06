@@ -1,0 +1,7 @@
+﻿Week Number	Feature	Page	Module	Owner	Planned Hours	Actual Hours	Dependencies	Target Date	Completion %	Status	Remarks
+Week 1	Content lifecycle stabilization	Admin Articles/Magazines/Blogs/News	CMS Workflow	Developer	38	0	Local DB, test data	2026-06-30	18	In Progress	Normalize status actions and scheduler behavior
+Week 2	Search, filters, categories	Public Search/Categories	Discovery	Developer	34	0	Backend query support	2026-07-07	0	Pending	Frontend already sends some query params
+Week 3	AI summary integration	Public Detail/Admin Forms	AI Content	Developer	32	0	GEMINI_API_KEY, prompt rules	2026-07-14	10	Pending	Schema has aiSummary fields
+Week 4	Auth/RBAC/security hardening	Login/Admin	Access Control	Developer	36	0	Role requirements	2026-07-21	20	Pending	JWT exists; RBAC needs tightening
+Month 2	Testing, media, deployment readiness	All	Quality/DevOps	Developer	120	0	Feature freeze	2026-08-21	8	Pending	Add automated tests and deployment pipeline
+Month 3	Performance, UAT, release	All	Release	Developer	100	0	Staging environment	2026-09-18	0	Pending	Production readiness and handover

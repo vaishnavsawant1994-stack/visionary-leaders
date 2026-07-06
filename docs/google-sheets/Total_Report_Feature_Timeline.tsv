@@ -1,0 +1,31 @@
+Section	Item	Details	Status	Priority	Start Date	Target Date	Completion %
+Completed Work	Project foundation	Next.js frontend, Express backend, Prisma database setup, routes, controllers, uploads, scheduler, and core structure	Done	High	2026-06-17	2026-06-23	100
+Completed Work	Public website	Home, about, contact, articles, magazines, magazine detail, magazine reader, blogs, news, categories, search, newsletter	In Progress	High	2026-06-17	2026-06-25	72
+Completed Work	Admin CMS	Admin dashboard, login, article/blog/news/magazine/category/subscriber management screens	In Progress	High	2026-06-17	2026-06-25	70
+Completed Work	Content CRUD	Create, read, update, delete flows for articles, magazines, blogs, news, categories, and subscribers	In Progress	High	2026-06-17	2026-06-25	74
+Completed Work	Article lifecycle	Draft, published, scheduled, preview, publish, and archive workflow for articles	Mostly Done	High	2026-06-17	2026-06-25	82
+Completed Work	Magazine reader	Flipbook PDF reader, navigation, zoom, fullscreen, download, reader page improvements	In Progress	High	2026-06-24	2026-06-25	76
+Completed Work	AI summary	Gemini AI summary route, detail-page summaries, magazine PDF summary, PDF extraction	In Progress	High	2026-06-24	2026-06-25	60
+Completed Work	Rating system	Magazine rating APIs, rating analytics APIs, and admin rating analytics dashboard	Done / Needs Testing	High	2026-06-25	2026-06-25	70
+Completed Work	Project tracking	Workbook, daily reports, roadmap, trackers, bug tracker, release tracker, risk tracker	Done	Medium	2026-06-23	2026-06-25	100
+Current Work	Translation section	Translation route, shared labels, translate/reset controls for article/blog/news/magazine/PDF reader	In Progress	High	2026-06-25	2026-07-03	55
+Gap	Hardcoded API URLs	Replace localhost calls with environment-based frontend API helper	Open	High	2026-06-25	2026-07-03	20
+Gap	Translation encoding	Clean broken multilingual labels and verify UTF-8 display	Open	High	2026-06-25	2026-06-28	30
+Gap	Automated testing	Add API, UI, and regression tests	Open	High	2026-07-01	2026-09-10	12
+Next Feature	Translation Section Stabilization	Fix encoding, improve route, support large chunks/PDFs, add loading/error states, centralize API URL	In Progress	High	2026-06-25	2026-06-28	75 target
+Next Feature	Translation QA + API Cleanup	Test supported languages, add fallbacks, smoke test APIs, clean frontend fetch calls	Pending	High	2026-06-29	2026-07-03	90 target
+Next Feature	Audio Content	Add reusable read-aloud/audio controls for articles, blogs, news, and magazine summaries	Pending	High	2026-07-04	2026-07-10	70 target
+Next Feature	Audio Content QA	Add pause/resume, speed control, language-aware reading, mobile/accessibility testing	Pending	High	2026-07-11	2026-07-16	90 target
+Next Feature	Advertiser Dashboard Backend	Add advertiser/campaign models, CRUD APIs, placements, impression/click tracking	Pending	High	2026-07-17	2026-07-27	65 target
+Next Feature	Advertiser Dashboard Frontend	Build dashboard, campaign tables, forms, analytics cards, charts, filters, reports	Pending	High	2026-07-28	2026-08-07	80 target
+Next Feature	Advertiser Dashboard QA	Test workflows, analytics, access control, validation, empty states, exports/reports	Pending	High	2026-08-08	2026-08-14	90 target
+Next Feature	Whole UI Improvement	Polish public pages, admin layout, magazine reader, forms, tables, responsive states	Pending	High	2026-08-15	2026-08-31	80 target
+Release	Full Regression + Final Polish	Test translation, audio, advertiser dashboard, ratings, AI summary, reader, CMS, responsive UI	Pending	High	2026-09-01	2026-09-10	90 target
+Release	Deployment Preparation	Env setup, deployment docs, production config, final bug fixes, release checklist	Pending	High	2026-09-11	2026-09-18	100 target
+Forecast	Frontend completion	Current 74%; expected 92% after next feature set	In Progress	High	2026-06-25	2026-09-18	92 target
+Forecast	Backend completion	Current 70%; expected 88% after next feature set	In Progress	High	2026-06-25	2026-09-18	88 target
+Forecast	Database completion	Current 74%; expected 86% after next feature set	In Progress	Medium	2026-06-25	2026-09-18	86 target
+Forecast	API completion	Current 68%; expected 90% after next feature set	In Progress	High	2026-06-25	2026-09-18	90 target
+Forecast	Testing completion	Current 12%; expected 75% after QA and regression	In Progress	High	2026-06-25	2026-09-18	75 target
+Forecast	Deployment completion	Current 8%; expected 80% after deployment preparation	In Progress	High	2026-06-25	2026-09-18	80 target
+Forecast	Overall project completion	Current 64%; expected 92% by final release preparation	In Progress	High	2026-06-25	2026-09-18	92 target

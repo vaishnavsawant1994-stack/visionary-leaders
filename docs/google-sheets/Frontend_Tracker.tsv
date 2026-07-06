@@ -1,0 +1,19 @@
+﻿Page	Module	Components	Framework	Status	Completion %
+Home	Public Landing	Hero, Categories, FeaturedMagazines, LatestArticles, LatestBlogs, LatestNews, Newsletter	Next.js/React	In Progress	75
+Articles Listing	Public Content	ArticleCard	Next.js/React	In Progress	70
+Article Detail	Public Content	Detail page, AI summary fetch	Next.js/React	In Progress	72
+Magazines Listing	Public Content	MagazineCard	Next.js/React	In Progress	75
+Magazine Detail	Public Content	Magazine metadata/read CTA	Next.js/React	In Progress	70
+Magazine Reader	Public Reader	FlipBookViewer, FlipPage, react-pdf	Next.js/React	In Progress	65
+Blogs	Public Content	BlogCard/detail	Next.js/React	In Progress	68
+News	Public Content	LatestNews/detail	Next.js/React	In Progress	64
+Search	Public Discovery	Search page	Next.js/React	Pending	45
+Categories	Public Discovery	Categories page/component	Next.js/React	In Progress	65
+Login	Admin Auth	Login form	Next.js/React	In Progress	70
+Admin Dashboard	Admin CMS	AdminSidebar, dashboard cards	Next.js/React	In Progress	60
+Admin Articles	Admin CMS	List/create/edit/preview	Next.js/React	In Progress	78
+Admin Magazines	Admin CMS	List/create/edit/preview	Next.js/React	In Progress	70
+Admin Blogs	Admin CMS	List/create/edit/preview	Next.js/React	In Progress	66
+Admin News	Admin CMS	List/create/edit/preview	Next.js/React	In Progress	62
+Admin Categories	Admin CMS	List/create/delete	Next.js/React	In Progress	70
+Admin Subscribers	Admin CMS	List	Next.js/React	In Progress	62

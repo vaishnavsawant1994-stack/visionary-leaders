@@ -1,0 +1,11 @@
+﻿Service	Controller	Business Logic	Middleware	Authentication	Status	Completion %
+Auth	authController	Register/login/password hash/JWT	None	Public	In Progress	65
+Articles	articleController	CRUD, schedule, preview, publish, archive	uploadCover, authMiddleware	Protected writes	In Progress	82
+Magazines	magazineController	CRUD, schedule, preview	uploadMagazine, authMiddleware	Protected writes	In Progress	68
+Blogs	blogController	CRUD, schedule, preview	authMiddleware	Protected writes	In Progress	60
+News	newsController	CRUD, schedule, preview	authMiddleware	Protected writes	In Progress	58
+Categories	categoryController	Create/list/delete	authMiddleware	Protected writes	In Progress	70
+Subscribers	subscriberController	Subscribe/list	authMiddleware	Protected list	In Progress	65
+AI Summary	aiRoutes/utils aiSummary	Generate summary via Gemini	None	Public currently	In Progress	45
+Scheduler	cron/scheduler	Auto-publish scheduled content	None	Server process	In Progress	72
+Static Uploads	server.js	Serve upload folders	Express static	Public	In Progress	60

@@ -1,0 +1,9 @@
+﻿Risk Type	Description	Severity	Owner	Mitigation Plan	Status
+Technical	Hardcoded localhost API URLs can break deployment	High	Developer	Centralize API base URL and migrate all fetch calls	Open
+Functional	Frontend search/category filters may call backend params that controllers do not handle	High	Developer	Implement Prisma query filters and add tests	Open
+Security	AI summarize route is public and could be abused	High	Developer	Add auth/rate limiting/content length controls	Open
+Security	RBAC is modeled but not enforced deeply	High	Developer	Add role checks in middleware and admin routes	Open
+Quality	No visible automated test suite	High	QA Lead	Add unit/integration/API smoke tests	Open
+Data	Magazine categoryId has no Prisma relation	Medium	Developer	Model relation or remove unused field ambiguity	Open
+Ops	CI/CD and environment templates are incomplete	Medium	DevOps Lead	Add pipelines, deployment docs, env examples	Open
+Product	Content lifecycle differs by type	Medium	Product/Engineering	Add status action parity across all content modules	Open
