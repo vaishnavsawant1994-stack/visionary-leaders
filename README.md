@@ -28,3 +28,7 @@ This repository may be related in business domain to `The-Perspective`, but it s
 - Run current build, database, authentication, publishing, scheduling, and AI integration tests.
 - Replace the historical percentage with evidence from the current head.
 - Document environment variables, migrations, content roles, editorial approvals, and deployment.
+
+## Detailed project guide
+
+The [**Project Handbook**](docs/PROJECT_HANDBOOK.md) describes the repository's specific goals, users, source architecture, functional areas, current qualification limits, development setup, security requirements and next milestones. It differentiates implemented source from unverified or planned functionality.
